@@ -16,23 +16,62 @@ header{
     height: 190px;
 }
 
-nav{
+.container{
     color: white;
     background-color: rgb(23, 17, 52);
     padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.welcome{
-    grid-column-start: 2;
+.opciones{
+    display: flex;
+    justify-content: space-around;
+}
+
+.hamburguesa{
+    display: none;
+}
+
+.hamburguesa a{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu-mobile{
+    display: none;
+}
+.menu-mobile a{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        justify-content: center;
+    }
+
+    .hamburguesa{
+        display: block;
+        text-align: center;
+    }
+
+    .opciones{
+        display: none;
+    }
 }
 
 .nav-text{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
+}
+
+.nav-text:hover{
+    color: rgb(103, 205, 245);
 }
 
 .intro{
