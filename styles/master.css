@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    background-color:  rgb(58, 67, 97);
+    background-color:  rgb(23, 17, 52);
 }
 
 .logo{
@@ -25,7 +25,6 @@ header{
     display: flex;
     justify-content: space-around;
     background-color: rgb(23, 17, 52);
-    color: rgba(255, 255, 255, 0.886);
     width: 100%;
 }
 
@@ -37,12 +36,14 @@ header{
     display: none;
 }
 
-.hamburguesa a{
-    color: white;
+.opciones a{
+    color: rgba(255, 255, 255, 0.886);
     background-color: rgb(23, 17, 52);
     font-family: great-vibes, sans-serif;
     font-style: normal;
     font-weight: 400;
+    text-decoration: none;
+    padding: 18px;
 }
 
 .menu-mobile{
@@ -102,7 +103,7 @@ header{
 }
 
 .acerca-de{
-    background-color: rgb(23, 17, 52);
+    background-color: rgb(58, 67, 97);
     padding: 20px;
     margin-top: 40px;
     margin-bottom: 40px;
