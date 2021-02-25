@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    background-color:  rgb(28, 31, 41);
+    background-color:  rgb(58, 67, 97);
 }
 
 .logo{
@@ -25,23 +25,22 @@ header{
     display: flex;
     justify-content: space-around;
     background-color: rgb(23, 17, 52);
-    color: white;
+    color: rgba(255, 255, 255, 0.886);
     width: 100%;
+}
+
+.img-hamburguesa{
+    height: 40px;
 }
 
 .hamburguesa{
     display: none;
-    background-color: rgb(23, 17, 52);
-    font-family: baskerville-display-pt, serif;
-    font-style: normal;
-    font-weight: 400;
-    color: white;
 }
 
 .hamburguesa a{
     color: white;
     background-color: rgb(23, 17, 52);
-    font-family: baskerville-display-pt, serif;
+    font-family: great-vibes, sans-serif;
     font-style: normal;
     font-weight: 400;
 }
@@ -50,18 +49,21 @@ header{
     display: none;
 }
 
-.menu-mobile a{
+.menu-mobile p{
     color: white;
     display: flex;
     justify-content: center;
-    font-family: baskerville-display-pt, serif;
+    font-family: great-vibes, sans-serif;
     font-style: normal;
     font-weight: 400;
+    font-size: 30px;
 }
 
 @media only screen and (max-width: 600px) {
     .container{
-        justify-content: space-between;
+        justify-content: center;
+        background-color: rgb(23, 17, 52);
+        padding: 20px;
     }
 
     .hamburguesa{
@@ -71,29 +73,46 @@ header{
     .opciones{
         display: none;
     }
+
+    .menu-mobile{
+        background-color: rgb(23, 17, 52);
+        padding: 5px;
+    }
 }
 
 .nav-text{
     background-color: rgb(23, 17, 52);
-    font-family: baskerville-display-pt, serif;
+    font-family: great-vibes, sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .nav-text:hover{
     color: rgb(169, 231, 255);
 }
 
-.shop{
-    display: none;
-}
-
 .intro{
-   height: 570px;
+   width: 100%;
 }
 
 .intro-video{
     display: flex;
     justify-content: center;
+}
+
+.acerca-de{
+    background-color: rgb(23, 17, 52);
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-areas:
+    "imagen imagen";
+}
+
+.imagen-acerca-de{
+    grid-column-start: 2;
 }
