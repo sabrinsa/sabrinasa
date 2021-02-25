@@ -17,46 +17,55 @@ header{
 }
 
 .container{
-    color: white;
-    background-color: rgb(23, 17, 52);
-    padding: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .opciones{
     display: flex;
     justify-content: space-around;
+    background-color: rgb(23, 17, 52);
+    color: white;
+    width: 100%;
 }
 
 .hamburguesa{
     display: none;
+    background-color: rgb(23, 17, 52);
+    font-family: baskerville-display-pt, serif;
+    font-style: normal;
+    font-weight: 400;
+    color: white;
 }
 
 .hamburguesa a{
     color: white;
-    display: flex;
-    justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(23, 17, 52);
+    font-family: baskerville-display-pt, serif;
+    font-style: normal;
+    font-weight: 400;
 }
 
 .menu-mobile{
     display: none;
 }
+
 .menu-mobile a{
     color: white;
     display: flex;
     justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: baskerville-display-pt, serif;
+    font-style: normal;
+    font-weight: 400;
 }
 
 @media only screen and (max-width: 600px) {
     .container{
-        justify-content: center;
+        justify-content: space-between;
     }
 
     .hamburguesa{
         display: block;
-        text-align: center;
     }
 
     .opciones{
@@ -65,13 +74,19 @@ header{
 }
 
 .nav-text{
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(23, 17, 52);
+    font-family: baskerville-display-pt, serif;
+    font-style: normal;
+    font-weight: 400;
     font-size: 20px;
 }
 
 .nav-text:hover{
-    color: rgb(103, 205, 245);
+    color: rgb(169, 231, 255);
+}
+
+.shop{
+    display: none;
 }
 
 .intro{
